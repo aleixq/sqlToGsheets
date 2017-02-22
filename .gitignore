@@ -1,0 +1,12 @@
+client_secret.json
+db_secret.json
+queries.json
+composer.phar
+composer
+composer.lock
+sqlToGsheets.conf.php
+/vendor
+/secrets/*
+!/secrets/queries.example.example.json
+!/secrets/client_secret.example.json
+!/secrets/db_secrets.example.json

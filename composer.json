@@ -1,0 +1,9 @@
+{
+    "name": "SqlToGsheets",
+    "require": {
+        "google/apiclient": "^2.0",
+    },
+    "autoload": {
+        "psr-4": {"SqlToGsheets\\": ["src/"]}
+    }
+}
