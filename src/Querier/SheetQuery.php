@@ -25,7 +25,7 @@ class SheetQuery implements SheetQueryInterface{
     $this->setRootSheetName($root_sheet_name);
     $this->sheetName = "";
   }
-  public function dbg(string $text){
+  public function dbg($text){
     if (DEBUG == TRUE){
       print $text;
     }
