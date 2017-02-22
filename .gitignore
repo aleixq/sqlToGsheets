@@ -7,6 +7,6 @@ composer.lock
 sqlToGsheets.conf.php
 /vendor
 /secrets/*
-!/secrets/queries.example.example.json
+!/secrets/queries.example.json
 !/secrets/client_secret.example.json
 !/secrets/db_secrets.example.json
