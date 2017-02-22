@@ -54,7 +54,7 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
     test_api(SPREADSHEETID, $service);
     //END OF TEST
   }catch(\Google_Service_Exception $e){
-    $redirect_uri = BASE_URL . 'oauth2callback.php';
+    $redirect_uri = BASE_URL . '/oauth2callback.php';
     header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));
   }
 
