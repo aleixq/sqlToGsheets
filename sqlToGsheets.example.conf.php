@@ -23,3 +23,4 @@ define('QUERIES_PATH', SECRET_DIR . '/queries.json');
 
 /* If DEBUG message are enabled*/
 define('DEBUG', TRUE);
+?>
