@@ -22,7 +22,7 @@ function getClient(){
 function sql_connect(){
   try {
     $sql_secrets = json_decode(file_get_contents(DB_SECRET_PATH), true);
-    $conn = new PDO("mysql:host=" . $sql_secrets['host'] . ";dbname=" . $sql_secrets['database'] , $sql_secrets['user'], $sql_secrets['password']);
+    $conn = new PDO("mysql:host=" . $sql_secrets['host'] . ";dbname=" . $sql_secrets['database'] . ";charset=utf8" , $sql_secrets['user'], $sql_secrets['password']);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // set NULL to String (SHEETS api not allowing Null values)
