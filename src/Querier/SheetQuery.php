@@ -168,7 +168,7 @@ class SheetQuery implements SheetQueryInterface{
     $this->dbg(var_export($body->values, TRUE));
     $this->dbg("</details>");
 
-    $opt = ["valueInputOption" => "RAW"];
+    $opt = ["valueInputOption" => "USER_ENTERED"];
     try{
       $response = $this->service->spreadsheets_values->update($this->sheetId,$range,$body,$opt);
     }catch(\Google_Service_Exception $e){
